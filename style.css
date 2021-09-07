@@ -275,17 +275,17 @@ ul {
 }
 .workProcess{
     width: 100%;
-    padding: 5rem;
+    padding: 2rem;
 }
 .workProcess .row {
     width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: space-around;
 }
 .row .proleft {
-    width: 40%;
+    width: 100%;
     text-align: center;
     padding: 2rem;
 }
@@ -296,7 +296,7 @@ ul {
     font-size: 1.6rem;
 }
 .row .proright {
-    width: 60%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -305,7 +305,7 @@ ul {
 }
 .proright .prbox {
     width: 100%;
-    width: 33.3%;
+    width: 20%;
     padding: 2rem;
     margin-top: 1rem;
 }
@@ -319,7 +319,7 @@ ul {
     margin-top: -25%;
     width:fit-content;
     text-align: center;
-    padding: 20px;
+    padding: 10px 20px;
     border: 5px solid tomato;
     background-color: tomato;
     border-radius: 100%;
@@ -365,6 +365,17 @@ ul {
 }
 
 /* web feature section styling end*/
+/*using service tool section styling start*/
+.serviceTools {
+    width: 100%;
+    height: auto;
+}
+
+.servicebox .item img {
+    width: 60%;
+}
+
+/*using service tool section styling start*/
 /*website type section styling start*/
 .websiteType {
     width: 100%;
@@ -430,7 +441,120 @@ ul {
     color: tomato;
 }
 /*website type section styling end*/
+/*faq section styling start*/
+.faq {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 0 2rem;
+}
 
+.faq .row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2rem;
+}
+
+.faq .row .image img {
+    height: auto;
+    width: 80%;
+}
+
+.faq .row .accordion-container {
+    width: 50%;
+    text-align: left;
+}
+
+.faq .row .accordion-container .accordion .accordion-header {
+    background-color: blue;
+    margin: 1rem 0;
+    box-shadow: .1rem .1rem .3rem rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.faq .row .accordion-container .accordion .accordion-header span {
+    display: inline-block;
+    text-align: center;
+    height: 4rem;
+    width: 5rem;
+    line-height: 4rem;
+    font-size: 2rem;
+    background: white;
+    color: gray;
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+}
+
+.faq .row .accordion-container .accordion .accordion-header h3 {
+    display: inline;
+    color: #fff;
+    font-weight: 400;
+    padding-left: 5rem;
+    font-size: 1.5rem;
+
+}
+
+.faq .row .accordion-container .accordion .accordion-body {
+    padding: 1rem;
+    color: #444;
+    box-shadow: .1rem .1rem .3rem rgba(0, 0, 0, 0.3);
+    font-size: 1.3rem;
+    display: none;
+}
+
+.faq .row .accordion-container .accordion:nth-child(1) .accordion-body {
+    display: block;
+}
+/*faq section styling end*/
+/*tesstimonial section styling start*/
+.testimonial {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 5rem 2rem 2rem 2rem;
+    background-image: url('image/backgroundc.png');
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.testimonial .row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2rem;
+}
+
+.testimonial .row .testicontent {
+    width: 50%;
+    padding: 2rem;
+
+}
+
+
+.testimonial .row .testicontent .peopleprofile {
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.testimonial .row .testicontent .peopleprofile img{
+    border-radius: 50%;
+}
+.testimonial .row .testicontent p{
+    font-size: 1.6rem;
+}
+.testimonial .row .testicontent h4{
+    font-size: 1.4rem;
+}
+.testimonial .row .testicontent bdo{
+    font-size: 1.2rem;
+}
+/*testimonial section styling end*/
 /*Footer section styling start*/
 .footer {
     width: 100%;
@@ -580,16 +704,20 @@ ul {
         padding: 2rem;
         text-align: center;
     }
+    .faq .row {
+        flex-direction: column;
+    }
+
+    .faq .row .accordion-container {
+        width: 100%;
+        text-align: left;
+    }
      .footerbox {
          width: 50%;
          padding: 1rem;
      }
   
 }
-
-
-
-
 @media screen and (max-width:420px) {
     .service-container .service-cart {
         width: 100%;
@@ -626,6 +754,9 @@ ul {
         width: 100%;
         padding: 1rem;
         text-align: center;
+    }
+    .testimonial .row .testicontent{
+        width: 100%;
     }
      .footerbox {
          width: 100%;

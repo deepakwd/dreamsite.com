@@ -31,17 +31,18 @@ $(document).ready(function () {
             }
         }
     });
-    /*counter up  */
-    $('.counter').counterUp({
-    delay: 10,
-    time: 1000
-});
-
-});
+    });
 $(document).ready(function () {
     $('.counter').counterUp({
     delay: 10,
     time: 1000
 });
-
+$(document).ready(function () {
+    $('.accordion-header').click(function(){
+            $('.accordion .accordion-body').slideUp();
+            $(this).next('.accordion-body').slideDown();
+            $('.accordion .accordion-header span').text('+');
+            $(this).children('span').text('-');
+        });
+});
 });
