@@ -8,9 +8,9 @@ $(document).ready(function () {
         $('.navbar').removeClass('nav-toggle');
 
         if ($(window).scrollTop() > 30) {
-            $('.header').css({'background':'darkblue','box-shadow':'0 .2rem .5rem rgba(0,0,0..4)'});
+            $('.header').css({'background':'royalblue','box-shadow':'0 .2rem .5rem rgba(0,0,0..4)'});
         } else {
-            $('.header').css({'background':'rgba(0, 0, 0, 0.695)','box-shadow':'none)'});
+            $('.header').css({'background':'none','box-shadow':'none)'});
         }
     });
    
