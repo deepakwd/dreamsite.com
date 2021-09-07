@@ -13,23 +13,35 @@ $(document).ready(function () {
         }
     });
     $('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:10,
-    nav: true,
-    autoWidth: true,
-    autoplay: true,
-    autoplayTimeout: 1000,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:3
-        },
-        1000:{
-            items:5
+        loop: true,
+        margin: 10,
+        nav: true,
+        autoWidth: true,
+        autoplay: true,
+        autoplayTimeout: 1000,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 3
+            },
+            1000: {
+                items: 5
+            }
         }
-    }
-})
+    });
+    /*counter up  */
+    $('.counter').counterUp({
+    delay: 10,
+    time: 1000
+});
+
+});
+$(document).ready(function () {
+    $('.counter').counterUp({
+    delay: 10,
+    time: 1000
+});
 
 });
