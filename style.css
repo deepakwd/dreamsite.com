@@ -10,15 +10,19 @@
     transition: all .2s linear;
     text-decoration: none;
 }
+
 html {
     font-size: 62.5%;
 }
+
 body {
     overflow-x: hidden;
 }
+
 ul {
     list-style-type: none;
 }
+
 .heading {
     padding: 2rem 0 0 0;
     margin: 0;
@@ -27,8 +31,10 @@ ul {
     color: black;
     text-align: center;
 }
+
 /*header Section styling Start*/
-.header,.headers {
+.header,
+.headers {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -39,18 +45,22 @@ ul {
     left: 0;
     z-index: 100;
 }
+
 .headers {
     background-color: darkblue;
 }
+
 .header .logo,
 .headers .logo {
     font-size: 2.5rem;
     color: white;
 }
+
 .header .logo i,
 .headers .logo i {
     padding: 0 .5rem;
 }
+
 .header .navbar ul,
 .headers .navbar ul {
     list-style-type: none;
@@ -58,19 +68,23 @@ ul {
     align-items: center;
     justify-content: space-around;
 }
+
 .header .navbar ul li,
 .headers .navbar ul li {
     margin: 0 1.54rem;
 }
+
 .header .navbar ul li a,
 .headers .navbar ul li a {
     font-size: 2rem;
     color: white;
 }
+
 .header .navbar ul li a:hover,
 .headers .navbar ul li a:hover {
     color: rgb(228, 54, 24);
 }
+
 .header .fa-bars,
 .headers .fa-bars {
     color: white;
@@ -78,14 +92,15 @@ ul {
     font-size: 3rem;
     display: none;
 }
+
 /*Header section styling end*/
 /*main container section styling start*/
 .indexContainer {
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 20px;
-    
+
 }
+
 /*Home section styling start*/
 .home,
 .homes {
@@ -116,16 +131,18 @@ ul {
     font-size: 5rem;
     text-shadow: 0 .3rem .5rem rgba(0, 0, 0, .3);
 }
+
 .home .slogan,
 .homes .slogan {
     font-size: 2.5rem;
     color: #eee;
     font-weight: 400;
 }
+
 .home button {
     height: 4rem;
     width: 18rem;
-    background-color:royalblue;
+    background-color: royalblue;
     color: #444;
     cursor: pointer;
     border: none;
@@ -136,16 +153,20 @@ ul {
     box-shadow: 0 .3rem .5rem rgba(0, 0, 0, 0.3);
     border-radius: 10px;
 }
-.home button a{
+
+.home button a {
     color: white;
 }
-.home button:hover{
+
+.home button:hover {
     letter-spacing: .1rem;
     background-color: tomato;
 }
-.home button:hover a{
+
+.home button:hover a {
     color: white;
 }
+
 /* home section styling end*/
 /* about section style start*/
 .about {
@@ -153,6 +174,7 @@ ul {
     padding: 0;
     margin: 0;
 }
+
 .about .aboutRow {
     width: 100%;
     display: flex;
@@ -161,6 +183,7 @@ ul {
     align-items: center;
     padding: 0.4rem;
 }
+
 .aboutRow .aboutImage {
     width: 50%;
     height: auto;
@@ -168,14 +191,17 @@ ul {
     padding: 0 3rem;
     margin: 0;
 }
-.aboutImage img{
+
+.aboutImage img {
     width: 60%;
     height: auto;
 }
+
 .aboutRow .aboutContent {
     width: 50%;
     height: auto;
 }
+
 .aboutRow .aboutContent h2 {
     padding-top: 0rem;
     font-size: 3rem;
@@ -188,17 +214,24 @@ ul {
     flex-direction: column;
     padding-top: 3.5rem;
 }
+
 .content-row .content-text {
     padding: 0 0 3rem 2rem;
 }
 
+.content-row .content-text h1 {
+    font-size: 2rem;
+    color: tomato;
+}
+
 .content-row .content-text h3 {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
 }
 
 .content-row .content-text p {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
 }
+
 /*about section styling end*/
 /*service section styling start*/
 .service {
@@ -207,6 +240,7 @@ ul {
     margin: auto;
     padding: auto;
 }
+
 .service-container {
     width: 100%;
     padding: 0 5rem;
@@ -216,29 +250,103 @@ ul {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    background: tomato;
+    background-color: #f7f7fc;
 }
+
 .service-container .service-cart {
     width: 33.3%;
     padding: 2rem;
     text-align: center;
 }
+
 .service-cart .service-content {
     width: 100%;
     padding: 1.2rem;
-    background: whitesmoke;
-    box-shadow: 0 .3rem .5rem rgba(0, 0, 0, 0.3);
+    color: black;
+    background-color: white;
+    box-shadow: 0 .3rem .5rem rgba(0, 0, 0, 0.5);
+    border-radius: 2rem;
+    transition: all .5s;
 }
+
+.service-cart .service-content:hover {
+    margin-top: -1rem;
+    background-color: tomato;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
 .service-content img {
     width: 40%;
+    transition: all 0.5s;
 }
+
 .service-content h4 {
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
+
 .service-content p {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
 }
-/*Service section styling end*/
+
+/* service power section styling start*/
+.servicePower {
+    width: 100%;
+}
+
+.servicePower .spContainer {
+    width: 100%;
+    background-image: url("image/bbb.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.servicePower .spContainer .row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.spContainer .row .spCart {
+    width: 33.3%;
+}
+
+.spCart .row {
+    padding: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.spfCart .spfBox {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0;
+    padding: 1rem;
+    box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+.spfCart .spfBox .spfContent {
+    padding: 1rem;
+}
+
+.spfCart .spfBox h3 {
+    font-size: 1.8rem;
+}
+
+.spfCart .spfBox p {
+    font-size: 1.4rem;
+}
+
+/*Service power section styling end*/
 /*my history section styling start*/
 .myhisto {
     width: 100%;
@@ -265,111 +373,96 @@ ul {
 .myhisto .row .box {
     text-align: center;
 }
+
 .myhisto .row .box h1 {
     font-size: 6rem;
 }
+
 .myhisto .row .box p {
     font-size: 3rem;
 }
+
 /*my history section end*/
 
 
 
 /*work process section styling start*/
-ul {
-    list-style-position: inside;
-}
-.workProcess{
+.workprocess {
     width: 100%;
-    padding: 2rem;
+    padding: 2rem 2rem 2rem 12rem;
 }
-.workProcess .row {
-    width: 100%;
+
+.workprocess .heading {
+    padding-bottom: 5rem;
+
+}
+
+.workprocess .row {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-}
-.row .proleft {
-    width: 100%;
-    text-align: center;
-    padding: 2rem;
-}
-.proleft h1{
-    font-size: 3.5rem;
-}
-.proleft p{
-    font-size: 1.6rem;
-}
-.row .proright {
-    width: 100%;
-    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    padding: 1rem;
+    text-align: center;
 }
-.proright .prbox {
-    width: 100%;
-    width: 30%;
-    padding: 2rem;
+
+.row .wpcart {
+    width: 25%;
+    background-image: url("arr.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
 }
-.prcontent {
+
+.row .wpcart:last-child {
+    background: none;
+}
+
+.workprocess .row .wpbox {
     width: 100%;
+    padding: 0rem;
+}
+
+.wpbox .wpcontent {
+    width: 200px;
+    height: 200px;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    border: .8rem solid tomato;
     padding: 10px;
-    text-align: center;
 }
-.prbox .prcontent h1 {
+
+.wpbox .wpcontent h1 {
     margin: 0 auto;
-    margin-top:0%;
-    width:100px;
-    text-align: center;
-    padding: 1rem;
-    border: 5px solid tomato;
+    margin-top: -3.5rem;
+    width: 50px;
+    height: 50px;
     background-color: tomato;
-    border-radius: 100%;
-    box-shadow: 0 .2rem .5rem rgba(0, 0, 0, 0.5);
-    font-size: 5rem;
-}
-.prbox .prcontent h3 {
+    color: white;
+    border-radius: 50%;
     text-align: center;
-    padding: 1rem 0;
-    font-size: 2rem;
-}
-.prbox .prcontent li{
-    font-size: 1.6rem;
-    padding-top: 5px;
-}
-/*website feature section styling end*/
-/* website feature section styling start*/
-.webFeature {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-.webFeature .row {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 1rem 5rem;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.row .webfbox {
-    width: 50%;
-    padding: 2rem 3rem;
-}
-
-.webfbox h3 {
+    padding-top: 10px;
     font-size: 2rem;
 }
 
-.webfbox p {
-    font-size: 1.5rem;
+.wpbox .wpcontent .wpcdisc {
+    padding-top: 20px;
 }
 
-/* web feature section styling end*/
+.wpbox .wpcontent .wpcdisc h3 {
+    font-size: 1.8rem;
+}
+
+.wpbox .wpcontent .wpcdisc ul {
+    list-style-type: none;
+}
+
+.wpbox .wpcontent .wpcdisc ul li {
+    font-size: 1.2rem;
+}
+
+/*  Work process section styling end*/
+
 /*using service tool section styling start*/
 .serviceTools {
     width: 100%;
@@ -381,71 +474,88 @@ ul {
 }
 
 /*using service tool section styling start*/
-/*website type section styling start*/
-.websiteType {
+/*web hosting plan section styling start*/
+.hostingPlan{
     width: 100%;
-    padding: 5rem;
-    background: tomato;
 }
-
-.websiteType .row {
+.hostingPlan .hpContainer{
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
 }
-
-.websiteType .row .webcart {
-    width: 33.3%;
-    padding: 2rem;
-    text-align: center;
-}
-
-.webcart .webbox {
+.hostingPlan .hpContainer .row{
     width: 100%;
-    height: 300px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+    padding: 10rem 0 5rem 0;
 }
-.webcart .webbox1 {
-    background-image: url("image/siteimage/5.jpg");
+.hpContainer .row .hpCart {
+    width: 25%;
+}
+.hpContainer .row .hpCart .hpcolorcart {
+    background-color: tomato;
+    margin-top: -10rem;
 }
 
-.webcart .webbox2 {
-    background-image: url("image/siteimage/3.png");
+.hpContainer .row .hpCart:hover {
+    margin-top: -10rem;
 }
-.webcart .webbox3 {
-    background-image: url("image/siteimage/1.png");
+
+.hpContainer .row .hpCart .hpcolorcart:hover {
+    background-color: white;
+    margin-top: 0rem;
 }
-.webcart .webbox4 {
-    background-image: url("image/siteimage/6.jpg");
+.hpContainer .row .hpCart .hpContent{
+    box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
 }
-.webcart .webbox5 {
-    background-image: url("image/siteimage/2.png");
-}
-.webcart .webbox6 {
-    background-image: url("image/siteimage/4.png");
-}
-.webcart .webbox1 h3,
-.webcart .webbox2 h3,
-.webcart .webbox3 h3,
-.webcart .webbox4 h3,
-.webcart .webbox5 h3,
-.webcart .webbox6 h3 {
+.hpContainer .row .hpCart .hpContent .hpHeading{
     width: 100%;
-    font-size: 2rem;
-    padding: 10px 0;
-    background: rgba(8, 8, 8, 0.575);
-    color: tomato;
+    text-align: center;
+    padding: 1rem;
+    border-bottom: 1px solid black;
 }
-/*website type section styling end*/
+.hpContainer .row .hpCart .hpContent .hpHeading bdo {
+    font-size: 1.4rem;
+    
+}
+.hpContainer .row .hpCart .hpContent .hpHeading h3{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.hpCart .hpContent .hpBody{
+    width: 100%;
+}
+.hpCart .hpContent .hpBody ul li{
+    font-size: 1.4rem;
+    padding: .5rem .5rem .5rem 8rem;
+}
+
+.hpCart .hpContent .button{
+    padding: 2rem 0;
+    text-align: center;
+}
+.hpCart .hpContent .button button{
+    padding: 1rem 2.5rem;
+    background-color: royalblue;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    text-align: center;
+    margin: 0 auto;
+    cursor: pointer;
+
+}
+.hpCart .hpContent .button button:hover {
+    background-color: tomato;
+    
+}
+.hpCart .hpContent .button button a{
+    color: white;
+}
+.hpCart .hpContent .button button:hover a {
+    letter-spacing: .5rem;
+}
+/*web hosting plan styling end*/
 /*faq section styling start*/
 .faq {
     width: 100%;
@@ -512,6 +622,7 @@ ul {
 .faq .row .accordion-container .accordion:nth-child(1) .accordion-body {
     display: block;
 }
+
 /*faq section styling end*/
 /*tesstimonial section styling start*/
 .testimonial {
@@ -547,18 +658,23 @@ ul {
     align-items: center;
     justify-content: center;
 }
-.testimonial .row .testicontent .peopleprofile img{
+
+.testimonial .row .testicontent .peopleprofile img {
     border-radius: 50%;
 }
-.testimonial .row .testicontent p{
+
+.testimonial .row .testicontent p {
     font-size: 1.6rem;
 }
-.testimonial .row .testicontent h4{
+
+.testimonial .row .testicontent h4 {
     font-size: 1.4rem;
 }
-.testimonial .row .testicontent bdo{
+
+.testimonial .row .testicontent bdo {
     font-size: 1.2rem;
 }
+
 /*testimonial section styling end*/
 /*Footer section styling start*/
 .footer {
@@ -567,8 +683,9 @@ ul {
     background-image: url("image/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center ;
+    background-position: center;
 }
+
 .footer .row {
     width: 100%;
     display: flex;
@@ -577,19 +694,23 @@ ul {
     justify-content: space-around;
     flex-wrap: wrap;
 }
+
 .footerbox {
     width: 25%;
     padding: 1rem;
 }
+
 .footerbox h3 {
     font-size: 2.3rem;
     color: white;
 }
+
 .footerbox p {
     font-size: 1.6rem;
     padding-bottom: 1.5rem;
     color: white;
 }
+
 .mainFooter {
     width: 100%;
     padding: 1rem;
@@ -599,29 +720,402 @@ ul {
     color: white;
     background: black;
 }
+
 .mainFooter p {
     font-size: 1.5rem;
 }
+
 .mainFooter a {
     font-size: 1.5rem;
 }
+
 /*footer section styling end*/
+/*       ***Contact Page styling start***     */
+.contactType .row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 
+.contactType .row .contactCart {
+    width: 33.3%;
+    padding: 2rem;
+}
 
+.contactType .row .contactCart .contactBox {
+    padding: 1rem;
+    text-align: center;
+}
 
+.contactType .row .contactCart .cb1 {
+    background-color: rgb(54, 180, 206);
+}
 
+.contactType .row .contactCart .cb2 {
+    background-color: rgb(253, 180, 78);
+}
 
+.contactType .row .contactCart .cb3 {
+    background-color: rgb(255, 114, 111);
+}
 
+.contactType .row .contactCart .contactBox img {
+    width: 25%;
+}
 
+.contactType .row .contactCart .contactBox h3 {
+    font-size: 1.8rem;
+}
 
+.contactType .row .contactCart .contactBox p {
+    font-size: 1.4em;
+}
 
+/*contact About section styling start*/
+.contactAbout {
+    width: 100%;
+    padding: 1rem 5rem;
+    margin: 3rem 0;
+}
 
+.contactAbout .row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contactAbout .row .image,
+.contactAbout .row .content {
+
+    width: 50%;
+}
+
+.contactAbout .row .image {
+    text-align: right;
+    z-index: 10;
+}
+
+.contactAbout .row .image img {
+    width: 80%;
+    border-radius: 20px;
+}
+
+.contactAbout .row .content {
+    background-color: tomato;
+    margin-top: 30px;
+    margin-left: -8rem;
+    margin-bottom: -30px;
+    padding-left: 10rem;
+    border-radius: 20px;
+
+}
+
+.contactAbout .row .content h3 {
+    font-size: 2rem;
+    padding: 2rem 0;
+}
+
+.contactAbout .row .content p {
+    font-size: 1.4rem;
+}
+
+.contactAbout .row .content p:last-child {
+    width: fit-content;
+    background-color: royalblue;
+    padding: 1rem 2rem;
+    color: white;
+    margin-top: 10rem;
+    border-radius: 2rem;
+    letter-spacing: .5rem;
+    font-weight: bold;
+}
+
+/*contact about section styling end*/
+/*contact social connect section styling start*/
+.contactSocial {
+    width: 100%;
+}
+
+.contactSocial .row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactSocial .row .email {
+    font-size: 1.4rem;
+    padding: 1rem 1.5rem;
+    background-color: royalblue;
+    color: white;
+    font-weight: bold;
+    letter-spacing: .2rem;
+    border-radius: 20px;
+}
+
+.contactSocial .row .social {
+    padding: 1rem;
+}
+
+.contactSocial .row .social a {
+    padding: 1rem;
+}
+
+.contactSocial .row .social a img {
+    width: 30px;
+
+}
+
+/*contact social connect section styling end*/
+/*contact section styling Start*/
+.contactVisit {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+}
+
+.contactVisit .formContainer h2 {
+    font-size: 2rem;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.contactVisit .formContainer {
+    height: auto;
+    width: 350px;
+    background-color: tomato;
+    padding: 0 1rem 1rem 1rem;
+    position: absolute;
+    display: block;
+    z-index: 50;
+    right: 5rem;
+    top: 2rem;
+    box-shadow: 0 .2rem .5rem rgba(0, 0, 0, 0.3);
+}
+
+.contactVisit .formContainer .formGroup {
+    width: 100%;
+    padding: .5rem;
+}
+
+.contactVisit .formContainer .formGroup label {
+    font-size: 1.8rem;
+    padding-bottom: .2rem;
+}
+
+.contactVisit .formContainer .formGroup input,
+.contactVisit .formContainer .formGroup textarea {
+    width: 100%;
+    padding: .5rem;
+    font-size: 1.4rem;
+    border: none;
+    outline: none;
+}
+
+.contactVisit .formContainer button {
+    margin-top: .5rem;
+    padding: .5rem 2rem;
+    font-size: 1.8rem;
+    border: none;
+    outline: none;
+    border-radius: .5rem;
+    background-color: royalblue;
+    color: white;
+    cursor: pointer;
+}
+
+.contactVisit .map {
+    width: 100%;
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 0rem 0;
+}
+
+/*contact section styling end*/
+/*  *Contact page Styling End* */
+/*   ***Company Menu page styling start***   */
+.indexContainer .companyDetail {
+    width: 100%;
+    padding: 2rem;
+}
+
+.companyDetail .row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.companyDetail .row .cdLeft {
+    width: 60%;
+    padding: 1rem;
+}
+
+.companyDetail .row .cdLeft h1 {
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+.companyDetail .row .cdLeft p {
+    font-size: 1.6rem;
+}
+
+.companyDetail .row .cdRight {
+    width: 40%;
+    padding: 0;
+    margin-top: -100px;
+    box-shadow: 0 .2rem .5rem rgba(0, 0, 0, 0.3);
+}
+
+.companyDetail .row .cdRight img {
+    width: 100%;
+}
+
+.companyTeam {
+    width: 100%;
+    padding: 5rem;
+
+}
+
+.companyTeam .ctContainer .row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ctContainer .row .ctCart {
+    width: 33%;
+    padding: 2rem;
+    text-align: center;
+}
+
+.ctContainer .row .ctCart .box1 img {
+    width: 80%;
+    height: auto;
+    border-radius: 50%;
+    border: 5px solid tomato;
+}
+
+.companyWork {
+    width: 100%;
+
+}
+
+.companyWork .row {
+    padding: 3rem 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.companyWork .row img {
+    width: 33.3%;
+    height: 300px;
+}
+
+/*   ***companym Menu page styling end***  */
+/*Service menu page styling start*/
+
+/*Service menu page styling end*/
+.serviceOffer {
+    width: 100%;
+    background-color: tomato;
+
+}
+
+.serviceOffer .row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.serviceOffer .row .socart {
+    width: 30%;
+    text-align: center;
+}
+
+.serviceOffer .row .socart img {
+    width: 100%;
+}
+
+.serviceOffer .row .socart p {
+    font-size: 1.4rem;
+    padding: 0.5rem;
+}
+
+.serviceDigitalMarketing {
+    width: 100%;
+}
+
+.sdmContainer {
+    width: 100%;
+
+}
+
+.sdmContainer .row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.sdmContainer .row .sdmLeft {
+    width: 40%;
+    text-align: center;
+    align-self: center;
+    padding: 5rem;
+}
+
+.sdmContainer .row .sdmLeft h3 {
+    font-size: 2.2rem;
+}
+
+.sdmContainer .row .sdmLeft p {
+    font-size: 1.4rem;
+}
+
+.sdmContainer .row .sdmRight {
+    width: 60%;
+
+}
+
+.sdmRight .row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.sdmRight .row .sdmbox {
+    width: 50%;
+    padding: 2rem;
+}
+
+.sdmRight .row .sdmbox h1 {
+    font-size: 1.8rem;
+}
+
+.sdmRight .row .sdmbox p {
+    font-size: 1.4rem;
+}
 
 /*media query*/
 @media screen and (max-width:768px) {
     html {
         font-size: 50%;
     }
+
     .heading {
         padding: 1.5rem 0;
         margin: 0;
@@ -630,10 +1124,12 @@ ul {
         color: black;
         text-align: center;
     }
+
     .header .fa-bars,
     .headers .fa-bars {
         display: block;
     }
+
     .header .navbar,
     .headers .navbar {
         position: fixed;
@@ -646,6 +1142,7 @@ ul {
         border-top: 1px solid rgba(0, 0, 0, 0.3);
         overflow: hidden;
     }
+
     .header .navbar ul,
     .headers .navbar ul {
         height: 100%;
@@ -653,6 +1150,7 @@ ul {
         flex-flow: column;
         margin: 0;
     }
+
     .header .navbar ul li,
     .headers .navbar ul li {
         width: 100%;
@@ -661,55 +1159,68 @@ ul {
         border-bottom: 1px solid whitesmoke;
 
     }
-    .header .navbar ul li:last-child{
+
+    .header .navbar ul li:last-child {
         border-bottom: none;
     }
-    .header .navbar ul li:hover{
-        background-color:tomato;
+
+    .header .navbar ul li:hover {
+        background-color: tomato;
     }
+
     .header .navbar ul li a,
     .headers .navbar ul li a {
         color: tomato;
         font-size: 2.4rem;
     }
-    .header .fa-times{
+
+    .header .fa-times {
         transform: rotate(180deg);
     }
+
     .header .nav-toggle,
     .headers .nav-toggle {
         top: 5.8rem;
     }
+
     .home .banner {
         font-size: 4rem;
     }
+
     .home .slogan {
         font-size: 2rem;
     }
+
     .aboutRow .aboutImage {
         width: 100%;
         height: auto;
         text-align: center;
         padding: 0;
     }
+
     .aboutRow .aboutContent {
         width: 100%;
         height: auto;
         text-align: center;
     }
-    .service-container{
+
+    .service-container {
         padding: 0;
     }
+
     .service-container .service-cart {
         width: 50%;
         padding: 2rem;
         text-align: center;
     }
-    .workProcess .row{
+
+    .workProcess .row {
         flex-direction: column;
     }
+
     .row .proleft {
         width: 100%;
-        
+
     }
 
     .row .proright {
@@ -722,11 +1233,13 @@ ul {
         padding: 1rem;
         margin-top: 1rem;
     }
+
     .websiteType .row .webcart {
         width: 50%;
         padding: 2rem;
         text-align: center;
     }
+
     .faq .row {
         flex-direction: column;
     }
@@ -735,25 +1248,73 @@ ul {
         width: 100%;
         text-align: left;
     }
-     .footerbox {
-         width: 50%;
-         padding: 1rem;
-     }
-  
+
+    .footerbox {
+        width: 50%;
+        padding: 1rem;
+    }
+
+    /*contact page responsive start*/
+    .companyDetail .row .cdLeft,
+    .companyDetail .row .cdRight {
+        width: 100%;
+        margin: 0;
+    }
+
+    .contactType .row .contactCart {
+        width: 50%;
+        padding: 2rem;
+    }
+
+    /*contact page responsive end*/
+    /*service menu page responsive start*/
+    .serviceOffer .row .socart {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .sdmContainer .row .sdmLeft,
+    .sdmContainer .row .sdmRight {
+        width: 100%;
+    }
+
+    /*work process responsive styling start*/
+    .workprocess {
+        padding: 0;
+    }
+
+    .row .wpcart {
+        width: 50%;
+        background: none;
+    }
 }
+
+
+
+
+
+
 @media screen and (max-width:420px) {
     .service-container .service-cart {
         width: 100%;
         padding: 1rem;
         text-align: center;
     }
+
+    .spContainer .row .spCart {
+        width: 100%;
+    }
+
     .myhisto .row {
         flex-direction: column;
     }
+
     .myhisto .row .box {
         text-align: center;
         padding: 2rem;
     }
+
     .row .proright {
         width: 100%;
     }
@@ -764,32 +1325,122 @@ ul {
         padding: 1rem;
         margin-top: 3rem;
     }
+
     .prbox .prcontent h1 {
         margin-top: -15%;
         font-size: 2rem;
     }
+
     .row .webfbox {
         width: 100%;
         padding: 2rem 1rem;
         text-align: center;
     }
+
     .websiteType .row .webcart {
         width: 100%;
         padding: 1rem;
         text-align: center;
     }
-    .testimonial .row .testicontent{
+
+    .testimonial .row .testicontent {
         width: 100%;
     }
-     .footerbox {
-         width: 100%;
-         padding: 1rem;
-         text-align: center;
-     }
-      .mainFooter {
-          flex-direction: column;
-          text-align: center;
-          justify-content: center;
-      }
 
+    .footerbox {
+        width: 100%;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .mainFooter {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+
+    /*contact page responsive start*/
+    .contactType .row .contactCart {
+        width: 100%;
+        padding: 2rem;
+    }
+
+    .contactVisit .formContainer {
+        position: relative;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    .contactAbout .row .image,
+    .contactAbout .row .content {
+        width: 100%;
+        text-align: center;
+    }
+
+    /*Company Menu page responsive start*/
+    .companyDetail .row .cdLeft,
+    .companyDetail .row .cdRight {
+        width: 100%;
+        margin: 0;
+    }
+
+    .ctContainer .row {
+        flex-direction: column;
+    }
+
+    .ctContainer .row .ctCart {
+        width: 100%;
+    }
+
+    .companyWork .row img {
+        flex-direction: column;
+        width: 100%;
+        height: 300px;
+    }
+
+    /*service menu page responsive start*/
+    .serviceOffer .row .socart {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .sdmContainer .row .sdmLeft,
+    .sdmContainer .row .sdmRight {
+        width: 100%;
+    }
+
+    .sdmRight .row .sdmbox {
+        width: 100%;
+    }
+
+    /*work process responsive styling start*/
+    .row .wpcart {
+        width: 100%;
+        background-image: none;
+
+    }
+    .servicePower .spContainer .row {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .wpbox .wpcontent {
+        margin: 0 auto;
+    }
+    /*Hosting Plan*/
+    .hpContainer .row .hpCart {
+        width: 100%;
+        padding: 1.5rem;
+    }
+    .hpContainer .row .hpcolorcart {
+        margin: 0;
+    }
+    .hpContainer .row .hpCart .hpContent {
+        box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+        margin-top: 2rem;
+    }
 }
