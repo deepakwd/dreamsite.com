@@ -1322,14 +1322,31 @@ ul {
 @media screen and (max-width:420px) {
     .service-container .service-cart {
         width: 100%;
-        padding: 1rem;
+        padding: 1rem 6rem;
         text-align: center;
     }
-
+    .service-cart .service-content {
+        background-color: #f7f7fc;
+        box-shadow: none;
+    }
+    .servicePower .spContainer{
+        background-image: none;
+        padding: 1rem 3rem ;
+    }
+    .spimage{
+        display: none;
+    }
+    .spfCart .spfBox{
+        margin: 1rem 0;
+        box-shadow: 0 0.2rem 0.3rem rgba(0, 0, 0, 0.3);
+        
+    }
     .spContainer .row .spCart {
         width: 100%;
     }
-
+    .spCart .row{
+        padding: 0 2rem;
+    }
     .myhisto .row {
         flex-direction: column;
     }
@@ -1338,7 +1355,24 @@ ul {
         text-align: center;
         padding: 2rem;
     }
+    /*Hosting Plan mobile responsive*/
+    .hpContainer{
+        padding: 0 20px;
 
+    }
+    .hpContainer .row .hpCart {
+        width: 100%;
+        padding: 1.5rem;
+    }
+
+    .hpContainer .row .hpcolorcart {
+        margin: 0;
+    }
+
+    .hpContainer .row .hpCart .hpContent {
+        box-shadow: 0 0.2rem 0.3rem rgba(0, 0, 0, 0.3);
+        margin-top: 1rem;
+    }
     .row .proright {
         width: 100%;
     }
@@ -1455,16 +1489,5 @@ ul {
     .wpbox .wpcontent {
         margin: 0 auto;
     }
-    /*Hosting Plan*/
-    .hpContainer .row .hpCart {
-        width: 100%;
-        padding: 1.5rem;
-    }
-    .hpContainer .row .hpcolorcart {
-        margin: 0;
-    }
-    .hpContainer .row .hpCart .hpContent {
-        box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
-        margin-top: 2rem;
-    }
+    
 }
