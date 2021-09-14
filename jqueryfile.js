@@ -8,10 +8,18 @@ $(document).ready(function () {
         $('.navbar').removeClass('nav-toggle');
 
         if ($(window).scrollTop() > 30) {
-            $('.header').css({'background':'royalblue','box-shadow':'0 .2rem .5rem rgba(0,0,0..4)'});
+            $('.header').css({ 'background': 'white', 'color': 'black', 'box-shadow': '0 .2rem .5rem rgba(0,0,0,0.4)' }),
+                $('.header ul li a').css('color', 'black'),
+                $('.headers ul li a').css('color', 'black'),
+                $('.header .fa-bars').css('color', 'black'),
+                $('.headers .fa-bars').css('color', 'black');
         } else {
-            $('.header').css({'background':'none','box-shadow':'none)'});
-        }
+            $('.header').css({ 'background': 'none', 'box-shadow': 'none' }),
+                $('.header ul li a').css('color', 'white'),
+                $('.header .fa-bars').css('color', 'white'),
+                $('headers ul li a').css('color', 'white'),
+                $('.headers .fa-bars').css('color','black')
+        };
     });
    
 });

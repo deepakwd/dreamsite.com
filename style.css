@@ -47,13 +47,13 @@ ul {
 }
 
 .headers {
-    background-color: darkblue;
+    background-color: white;
 }
 
 .header .logo,
 .headers .logo {
-    font-size: 2.5rem;
-    color: white;
+    font-size: 3rem;
+    color: tomato;
 }
 
 .header .logo i,
@@ -74,15 +74,21 @@ ul {
     margin: 0 1.54rem;
 }
 
-.header .navbar ul li a,
-.headers .navbar ul li a {
+.header .navbar ul li a {
     font-size: 2rem;
     color: white;
 }
-
+.headers .navbar ul li a{
+    font-size: 2rem;
+    color: black;
+}
 .header .navbar ul li a:hover,
 .headers .navbar ul li a:hover {
-    color: rgb(228, 54, 24);
+    color: coral;
+    background-color: coral;
+    padding: .5rem 1.5rem;
+    box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+    border-radius: .5rem;
 }
 
 .header .fa-bars,
@@ -130,16 +136,23 @@ ul {
     color: #fff;
     font-size: 5rem;
     text-shadow: 0 .3rem .5rem rgba(0, 0, 0, .3);
+    letter-spacing: .2rem;
 }
 
-.home .slogan,
-.homes .slogan {
-    font-size: 2.5rem;
+.home .slogan{
+    font-size: 2rem;
     color: #eee;
     font-weight: 400;
+    width: 60%;
 }
-
+.homes .slogans{
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: white;
+    font-weight: lighter;
+}
 .home button {
+
     height: 4rem;
     width: 18rem;
     background-color: royalblue;
@@ -147,7 +160,7 @@ ul {
     cursor: pointer;
     border: none;
     outline: none;
-    margin-top: 1rem;
+    margin-top: 2rem;
     font-size: 2rem;
     font-weight: 400;
     box-shadow: 0 .3rem .5rem rgba(0, 0, 0, 0.3);
@@ -216,7 +229,7 @@ ul {
 }
 
 .content-row .content-text {
-    padding: 0 0 3rem 2rem;
+    padding: 0rem 5rem 1rem 0rem;
 }
 
 .content-row .content-text h1 {
@@ -572,7 +585,7 @@ ul {
     color: white;
 }
 .hpCart .hpContent .button button:hover a {
-    letter-spacing: .5rem;
+    letter-spacing: .2rem;
 }
 /*web hosting plan styling end*/
 /*faq section styling start*/
@@ -722,29 +735,30 @@ ul {
 .footerbox h3 {
     font-size: 2.3rem;
     color: white;
+    padding-bottom: 1.5rem;
 }
 
 .footerbox p {
     font-size: 1.6rem;
-    padding-bottom: 1.5rem;
-    color: white;
+    padding-bottom: .5rem;
+    color: whitesmoke;
 }
-.footerbox p a{
-    padding-right: 1.5rem;
+.mainFooter p a{
+    padding-right: 1.2rem;
 }
-.footerbox p img{
-    width: 2.5rem;
+.mainFooter p img{
+    width: 2.2rem;
 }
 .mainFooter {
     width: 100%;
     padding: 1rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    color: white;
+    
+    color:whitesmoke;
     background: black;
 }
-
+.mainFooter .mfsocial{
+    float: right;
+}
 .mainFooter p {
     font-size: 1.5rem;
 }
@@ -939,7 +953,9 @@ ul {
     outline: none;
 }
 
-.contactVisit .formContainer button {
+.contactVisit .formContainer button,
+.sdmContainer .row .sdmLeft button,
+.serviceOffer .row .socart button {
     margin-top: .5rem;
     padding: .5rem 2rem;
     font-size: 1.8rem;
@@ -965,6 +981,7 @@ ul {
 .indexContainer .companyDetail {
     width: 100%;
     padding: 2rem;
+    
 }
 
 .companyDetail .row {
@@ -992,7 +1009,6 @@ ul {
     width: 40%;
     padding: 0;
     margin-top: -100px;
-    box-shadow: 0 .2rem .5rem rgba(0, 0, 0, 0.3);
 }
 
 .companyDetail .row .cdRight img {
@@ -1004,28 +1020,45 @@ ul {
     padding: 5rem;
 
 }
+.companyTeam .desc{
+    font-size: 1.4rem;
+    text-align: center;
+}
 
 .companyTeam .ctContainer .row {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+
 }
 
 .ctContainer .row .ctCart {
     width: 33%;
     padding: 2rem;
     text-align: center;
-}
 
+}
+.ctContainer .row .ctCart .box1{
+        box-shadow: 0 .2rem .3rem rgb(0, 0, 0.3);
+        border-radius: 2rem;
+        padding-bottom: 2rem;
+}
 .ctContainer .row .ctCart .box1 img {
-    width: 80%;
+    width:100% ;
     height: auto;
-    border-radius: 50%;
-    border: 5px solid coral;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
 }
-
+.ctContainer .row .ctCart .box1 h1{
+    font-size: 1.8rem;
+    padding-top: 1.5rem;
+}
+.ctContainer .row .ctCart .box1 bdo{
+    font-size: 1.4rem;
+    padding-bottom: 2rem;
+}
 .companyWork {
     width: 100%;
 
@@ -1049,7 +1082,6 @@ ul {
 /*Service menu page styling end*/
 .serviceOffer {
     width: 100%;
-    background-color: coral;
 
 }
 
@@ -1057,7 +1089,8 @@ ul {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
     padding: 2rem;
 }
 
@@ -1081,7 +1114,7 @@ ul {
 
 .sdmContainer {
     width: 100%;
-
+    background-color: #f7f7fc;
 }
 
 .sdmContainer .row {
@@ -1118,14 +1151,17 @@ ul {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: 1rem;
+    padding: 0rem;
 }
 
 .sdmRight .row .sdmbox {
     width: 50%;
-    padding: 2rem;
+    padding: 1rem;
 }
-
+.sdmRight .row .sdmbox .sdmContent{
+    background-color: white;
+    padding: 1rem;
+}
 .sdmRight .row .sdmbox h1 {
     font-size: 1.8rem;
 }
@@ -1161,9 +1197,8 @@ ul {
         left: 0;
         height: auto;
         width: 100%;
-        background-color: rgba(0, 0, 0, 0.733);
+        background-color: tomato;
         z-index: 1000;
-        border-top: 1px solid rgba(0, 0, 0, 0.3);
         overflow: hidden;
     }
 
@@ -1179,12 +1214,13 @@ ul {
     .headers .navbar ul li {
         width: 100%;
         text-align: center;
-        margin: 1rem 0;
-        border-bottom: 1px solid whitesmoke;
+        padding: 1rem 0;
+        border-bottom: 2px solid whitesmoke;
 
     }
 
-    .header .navbar ul li:last-child {
+    .header .navbar ul li:last-child,
+    .headers .navbar ul li:last-child     {
         border-bottom: none;
     }
 
@@ -1302,7 +1338,7 @@ ul {
     .sdmContainer .row .sdmRight {
         width: 100%;
     }
-
+    
     /*work process responsive styling start*/
     .workprocess {
         padding: 0;
@@ -1320,6 +1356,11 @@ ul {
 
 
 @media screen and (max-width:420px) {
+    .header .logo,
+    .headers .logo {
+        font-size: 2.5rem;
+        color: tomato;
+    }
     .service-container .service-cart {
         width: 100%;
         padding: 1rem 6rem;
@@ -1412,11 +1453,11 @@ ul {
     }
 
     .mainFooter {
-        flex-direction: column;
-        text-align: center;
-        justify-content: center;
+       text-align: center;
     }
-
+    .mainFooter .mfsocial {
+        float:none;
+    }
     /*contact page responsive start*/
     .contactType .row .contactCart {
         width: 100%;
@@ -1489,5 +1530,16 @@ ul {
     .wpbox .wpcontent {
         margin: 0 auto;
     }
-    
+    /*contact page mobile responsive start*/
+    .contactAbout .row .content{
+        margin: 1rem 0;
+        padding: 1rem;
+    }
+    .contactAbout .row .content p:last-child{
+        text-align: center;
+        width: 100%;
+    }
+    .contactSocial .row .email{
+        margin-bottom: 1rem;
+    }
 }
