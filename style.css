@@ -84,7 +84,7 @@ ul {
 }
 .header .navbar ul li a:hover,
 .headers .navbar ul li a:hover {
-    color: coral;
+    color: white;
     background-color: coral;
     padding: .5rem 1.5rem;
     box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
@@ -743,6 +743,9 @@ ul {
     padding-bottom: .5rem;
     color: whitesmoke;
 }
+.footerbox p a{
+    color: white;
+}
 .mainFooter p a{
     padding-right: 1.2rem;
 }
@@ -1230,10 +1233,17 @@ ul {
 
     .header .navbar ul li a,
     .headers .navbar ul li a {
-        color: coral;
+        color: black;
         font-size: 2.4rem;
     }
-
+.header .navbar ul li a:hover,
+.headers .navbar ul li a:hover {
+    color: white;
+    background-color: coral;
+    padding: 0;
+    box-shadow: none;
+    border-radius: 0;
+}
     .header .fa-times {
         transform: rotate(180deg);
     }
