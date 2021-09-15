@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="style.css">
     <!--font awesome file link-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <!--scrolling screen effect-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <header class="headers">
@@ -35,12 +37,13 @@
                 <h1 class="banner">
                 Company Profile
             </h1>
-            <h3 class="slogans">Home/Company</h3>
+            <h3 class="slogans">
+                <a href="index.html"style="color:royalblue;">Home</a>/ <a href="company.html" style="color: coral;">Company</a></h3>
             </div>
         </section>
         <section class="companyDetail">
             <div class="row">
-                <div class="cdLeft">
+                <div class="cdLeft"data-aos="fade-up" data-aos-duration="1000">
                     <h1>About Company</h1>
                     <p>
                         Our History
@@ -94,21 +97,21 @@
             <div class="ctContainer">
                  <div class="row">
                     <div class="ctCart">
-                        <div class="box1">
+                        <div class="box1"data-aos="fade-up" data-aos-duration="1000">
                             <img src="image/profileimg.jpg">
                             <h1>Deepak Sharma</h1>
                             <bdo>Founder &  CEO</bdo>
                         </div>
                     </div>
                     <div class="ctCart">
-                        <div class="box1">
+                        <div class="box1"data-aos="fade-up" data-aos-duration="1000">
                             <img src="image/profileimg.jpg">
                             <h1>Deepak Sharma</h1>
                             <bdo>Founder &  CEO</bdo>
                         </div>
                     </div>
                     <div class="ctCart">
-                        <div class="box1">
+                        <div class="box1"data-aos="fade-up" data-aos-duration="1000">
                             <img src="image/profileimg.jpg">
                             <h1>Deepak Sharma</h1>
                             <bdo>Founder &  CEO</bdo>
@@ -120,27 +123,27 @@
         <section class="testimonial">
             <h1 class="heading">testimonial</h1>
             <div class="row">
-                <div class="testicontent">
-                    <div data-aos="fade-up" data-aos-duration="1000">
-                        <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit qui illo itaque illum quia nemo recusandae vel iure minus sequi, repellat corrupti reprehenderit maxime minima voluptates quod a debitis minus vitae ipsam dicta, distinctio totam fugiat "</p>
+                <div class="testicontent"data-aos="fade-up" data-aos-duration="1000">
+                    <div>
+                        <p>"This is a good company for website development and designing. I have developed my own e-commerce website. thanks dreamsite. "</p>
                     </div>
                     <div class="peopleprofile">
                         <img src="image/logo/admin.png" alt="" style="width: 50px;">
                         <div>
-                            <h4>Deepak sharma</h4>
-                            <bdo>web developer</bdo>
+                            <h4>Raghubin Kumar</h4>
+                            <bdo>IT Teacher</bdo>
                         </div>
                     </div>
                 </div>
-                <div class="testicontent">
-                    <div data-aos="fade-up" data-aos-duration="1000">
-                        <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit qui illo itaque illum quia nemo recusandae vel iure minus sequi, repellat corrupti reprehenderit maxime minima voluptates quod a debitis minus vitae ipsam dicta, distinctio totam fugiat "</p>
+                <div class="testicontent"data-aos="fade-up" data-aos-duration="1000">
+                    <div>
+                        <p>"This is great company its service is also good. deleveray time of this company is also great thanks for developed my company webstie. "</p>
                     </div>
                     <div class="peopleprofile">
                         <img src="image/logo/admin.png" alt="" style="width: 50px;">
                         <div>
-                            <h4>Deepak sharma</h4>
-                            <bdo>web developer</bdo>
+                            <h4>Mukesh Kumar</h4>
+                            <bdo>Developer</bdo>
                         </div>
                     </div>
                 </div>
@@ -209,7 +212,12 @@
     </div>
 <!--jquery file link-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!--scrolling effectt jquery plugin link-->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <!--custom js file link-->
 <script src="jqueryfile.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>
